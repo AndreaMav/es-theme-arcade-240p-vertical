@@ -21,7 +21,7 @@ Date:     08/05/2020
       </image>
       <carousel name="systemcarousel">
         <type>vertical</type>
-        <pos>0.015 0</pos>
+        <pos>0 0</pos>
         <size>1 1</size>
         <logoScale>1</logoScale>
         <logoSize>0.98 0.20</logoSize>

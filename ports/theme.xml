@@ -1,0 +1,33 @@
+<!--
+theme name:   es-arcade-crt-vertical
+version:    1.0
+author:     AndreaMav
+web:      https://github.com/AndreaMav/es-theme-arcade-240p-vertical
+Date:     08/05/2020
+-->
+
+<theme>
+	<formatVersion>4</formatVersion>
+	 <include>./../theme.xml</include>
+
+	<view name="system">
+		<image name="logo">
+      <path>./_inc/system_and.png</path>
+		</image>
+	</view>
+
+
+
+	<view name="basic, detailed, video">
+
+    <image name="logo">
+      <path>./_inc/system_and.png</path>
+    </image>
+
+            
+	</view>
+	<view name="basic">
+                
+	</view>		
+
+</theme>
