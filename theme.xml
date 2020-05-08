@@ -1,0 +1,283 @@
+<!--
+theme name:   es-arcade-crt-vertical
+version:    1.0
+author:     AndreaMav
+web:      https://github.com/AndreaMav/es-theme-arcade-240p-vertical
+Date:     08/05/2020
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+   <view name="system">
+      <image name="system-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0.5</pos>
+         <size>0.4 0.15</size>
+         <tile>false</tile>
+        <path>./art/arcand.png</path>
+        <rotation>-90</rotation>
+      </image>
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>0.015 0</pos>
+        <size>1 1</size>
+        <logoScale>1</logoScale>
+        <logoSize>0.98 0.20</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>5</maxLogoCount>
+      </carousel>
+      <text name="systemInfo">
+         <pos>0 0.540</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>ffffff</color>
+         <fontPath>./art/TitilliumWeb-SemiBold.ttf</fontPath>
+         <!--dim font conteggio giochi-->
+	     <fontSize>0.05</fontSize>
+      </text>            
+   </view>
+
+   <view name="system,basic,detailed,video">
+      <helpsystem name="help">
+         <fontSize>0.023</fontSize>
+         <pos>0.02 0.98</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff50</iconColor>
+      </helpsystem>
+   </view>
+
+   <view name="basic,detailed,video">
+      <image name="logo">
+         <origin>0 0</origin>
+         <pos>0.28 0.005</pos>
+         <size>0.55 0.20</size>
+      </image>
+      <image name="logo_helper" extra="true">
+         <path>./art/arcand2.png</path>
+         <origin>0 0</origin>
+         <pos>0.60 0.215</pos>
+         <size>0.35 0.13</size>
+      </image>
+      <textlist name="gamelist">
+         <origin>0 0</origin>
+         <pos>0.08 0.64</pos>
+         <size>0.85 0.30</size>
+         <selectorColor>001B9D</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>7a6161</secondaryColor>
+         <fontPath>./art/C64.ttf</fontPath>
+         <fontSize>0.033</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+         <lineSpacing>1.25</lineSpacing>
+      </textlist>
+   </view>
+
+   <view name="basic">
+      <image name="logo">
+         <pos>0.503 0.096</pos>
+         <maxSize>0.87 0.25</maxSize>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.08 0.199</pos>
+         <size>0.85 0.77</size>
+         <alignment>center</alignment>
+         <fontSize>0.040</fontSize>   
+      </textlist>
+      
+   </view>
+
+   <view name="detailed">
+      
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lastplayed,md_description,md_lbl_players,md_players,md_genre,md_lbl_genre,md_releasedate,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_playcount,md_playcount">
+         <color>777777</color>
+         <fontPath>./art/piccolo.ttf</fontPath>
+         <fontSize>0.045</fontSize>
+         <forceUppercase>1</forceUppercase>
+      </text>
+      <rating name="md_rating">
+         <pos>0.1 1.575</pos>
+         <size>0 0.025</size>
+         <filledPath>./_inc/images/star_filled.svg</filledPath>
+         <unfilledPath>./_inc/images/star_empty.svg</unfilledPath>
+      </rating>
+      <text name="md_description">
+         <pos>0.08 0.51</pos>
+         <size>0.85 0.14</size>
+         <fontSize>0.045</fontSize>         
+         <color>EFF700</color>
+         <forceUppercase>1</forceUppercase>
+      </text>
+      <text name="md_lbl_lastplayed">
+         <pos>0.655 0.18</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <datetime name="md_lastplayed">
+         <pos>0.655 0.2</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </datetime>      
+      <!-- players e genere in basso -->
+      <text name="md_lbl_players">
+         <pos>0.655 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_players">
+         <pos>0.810 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>
+      <text name="md_lbl_genre">
+         <pos>0.240 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_genre">
+         <pos>0.35 0.95</pos>
+         <size>0.24 0.02</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>       
+      <!-- players e genere in basso -->  
+      <text name="md_lbl_releasedate">
+         <pos>0.655 0.33</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.655 0.37</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </datetime>
+      <text name="md_lbl_playcount">
+         <pos>0.655 0.41</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_playcount">
+         <pos>0.655 0.44</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>             
+      
+   </view>
+
+   <view name="video">
+      
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lastplayed,md_description,md_lbl_players,md_players,md_genre,md_lbl_genre,md_releasedate,md_lbl_releasedate,md_lbl_lastplayed,md_lbl_playcount,md_playcount">
+         <color>777777</color>
+         <fontPath>./art/piccolo.ttf</fontPath>
+         <fontSize>0.045</fontSize>
+         <forceUppercase>1</forceUppercase>
+      </text>
+      <rating name="md_rating">
+         <pos>0.1 1.575</pos>
+         <size>0 0.025</size>
+         <filledPath>./_inc/images/star_filled.svg</filledPath>
+         <unfilledPath>./_inc/images/star_empty.svg</unfilledPath>
+      </rating>
+      <text name="md_description">
+         <pos>0.08 0.51</pos>
+         <size>0.85 0.14</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color>
+         <forceUppercase>1</forceUppercase>
+      </text>
+      <!-- players e genere in basso -->
+      <text name="md_lbl_players">
+         <pos>0.655 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_players">
+         <pos>0.810 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>
+      <text name="md_lbl_genre">
+         <pos>0.240 0.92</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_genre">
+         <pos>0.35 0.95</pos>
+         <size>0.24 0.02</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>       
+      <!-- players e genere in basso -->
+      <text name="md_lbl_releasedate">
+         <pos>0.655 0.33</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.655 0.37</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </datetime>
+      <text name="md_lbl_playcount">
+         <pos>0.655 0.41</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>cccccc</color>         
+      </text>
+      <text name="md_playcount">
+         <pos>0.655 0.44</pos>
+         <size>0.9 0.08</size>
+         <fontSize>0.040</fontSize>         
+         <color>EFF700</color> 
+      </text>             
+   </view>
+
+   <view name="detailed">
+      
+      <image name="md_image">
+         <pos>0.32 0.350</pos>
+         <zIndex>45</zIndex>
+         <size>0.40 0.280</size>
+      </image>
+   </view>
+
+   <view name="video">
+      
+      <video name="md_video">
+         <pos>0.32 0.350</pos>
+         <zIndex>45</zIndex>
+         <size>0.40 0.280</size>
+         <delay>1.00</delay>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+      <image name="md_marquee">
+         <pos>0.815 0.69</pos>
+         <maxSize>0.18 0.18</maxSize>
+      </image>
+   </view>
+   
+</theme>
